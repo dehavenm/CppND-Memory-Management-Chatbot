@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <memory>
+#include <iostream>
 #include "chatgui.h"
 
 // forward declarations
