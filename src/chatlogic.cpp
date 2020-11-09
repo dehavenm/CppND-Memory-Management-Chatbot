@@ -15,13 +15,8 @@
 
 ChatLogic::ChatLogic()
 {
-    //// STUDENT CODE
-    ////
 
-    
 
-    ////
-    //// EOF STUDENT CODE
 }
 
 ChatLogic::~ChatLogic()
