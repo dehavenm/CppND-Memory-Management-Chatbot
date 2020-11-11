@@ -51,6 +51,7 @@ ChatBot::ChatBot(const ChatBot &source) // 2 : copy constructor
 
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
     _chatLogic->SetChatbotHandle(this);
    
 }
@@ -65,6 +66,7 @@ ChatBot& ChatBot::operator=(const ChatBot &source) // 3 : copy assignment operat
 
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
     _chatLogic->SetChatbotHandle(this);
 
     return *this;
@@ -77,6 +79,7 @@ ChatBot::ChatBot(ChatBot &&source) // 4 : move constructor
 
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
     _chatLogic->SetChatbotHandle(this);
 
     source._image = NULL;
@@ -96,6 +99,7 @@ ChatBot& ChatBot::operator=(ChatBot &&source) // 5 : move assignment operator
 
     _currentNode = source._currentNode;
     _rootNode = source._rootNode;
+    _chatLogic = source._chatLogic;
     _chatLogic->SetChatbotHandle(this);
 
     source._image = NULL;
